@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru"> </html>
+  <head>
+    <title>Задание №6 от 20 октября 2021</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+
+  <body>
+    <script src="js/script.js"></script>
+    <div class="text1">
+      <p><span class="bold big">Задание №1</span></p>
+      <script>
+        document.write(
+          `Нашего нового админа зовут <span class="bold">${adminName}</span>, странное имя...`
+        );
+      </script>
+    </div>
+
+    <div class="text2">
+      <p><span class="bold big">Задание №2</span></p>
+      <p><span class="italic bold">Возможные переменные для Земли: </span></p>
+      <script>
+        document.write(thirdSolarSystemPlanet + ", ");
+        document.write(humanityHomePlanet + ", ");
+        document.write(thirdPlanet + ", ");
+        document.write(onlyHabitablePlanet);
+      </script>
+      <p>
+        <span class="italic bold"
+          >Возможные переменные для текущего пользователя:
+        </span>
+      </p>
+      <script>
+        document.write(currentUser + ", ");
+        document.write(currentSiteVisitor);
+      </script>
+    </div>
+    <div class="text3">
+      <p><span class="bold big">Задание №3</span></p>
+      <p>Если значение константы известно заранее - рекомендуется писать в
+        верхнем регистре, если значение константы вычисляется - имя
+        рекомендуется писать в нижнем регистре. То есть в данном примере
+        <span class="bold">BIRTHDAY</span> и <span class="bold">age</span>
+      </p>
+    </div>
+    <div class="text4">
+      <p><span class="bold big">Задание №4 (измененное)</span></p>
+			Варианты вывода
+		<script> 
+			document.write(`<ul><li>Привет ${1}</li>`);
+			document.write(`<li>Привет ${"someName"}</li>`);
+			document.write(`<li>Привет ${someName}</li></ul>`);</script>
+    </div>
+  </body>
+</html>

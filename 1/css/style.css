@@ -1,0 +1,128 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+nav, header, footer, aside {
+	display: block;
+}
+
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea, select {
+	font-family: inherit;
+}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited, a:hover {
+	text-decoration: none;
+	color: inherit;
+	font-family:inherit;
+}
+
+img {vertical-align: top;}
+
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+
+.example-image {
+min-height: 100px;
+max-height: 150px;
+border-radius: 50%;
+margin: 20px;
+}
+
+.task1
+	{
+		border: 30px solid #40c4c8;
+		padding: 20px;
+		-moz-border-image: url("/img/bg-image.png") 30 round round;
+		-o-border-image: url("/img/bg-image.png") 30 round round;
+		-webkit-border-image: url("/img/bg-image.png") 30 round round;
+		border-image: url("/img/bg-image.png") 30 round round;
+		font-size: 15px;	
+		line-height: 1.5;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100;Blue+3D+%2318 */
+		background: rgb(254,255,255); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(221,241,249,1) 35%, rgba(160,216,239,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+
+		
+  }
+
+  ul.ul1 li {
+	margin: 0;
+	padding: 10px 0 0 27px;
+	list-style: none;
+	background-image: url("/img/circle2.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 8px;
+  }
+
+  ul.ul2 li {
+	margin: 0;
+	padding: 10px 0 0 27px;
+	list-style: none;
+	background-image: url("/img/circle1.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 10px;
+  }
+
+h2 {
+	margin-left: -33px;
+	margin-top: 15px;
+	font-weight: 700;
+}
+
+ul.ul2 {
+	margin-left: 60px;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 700;	
+	text-align: center;
+}
+
+#parent{
+	position: relative;
+}
+
+#div1 {
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.bold {
+	font-weight: 700;
+	font-size: 20px;
+}
+

@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+nav, header, footer, aside {
+	display: block;
+}
+
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea, select {
+	font-family: inherit;
+}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited, a:hover {
+	text-decoration: none;
+	color: inherit;
+	font-family:inherit;
+}
+
+img {vertical-align: top;}
+
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+
+
+
+h1 {
+	padding: 20px;
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+}
+
+body {
+	padding: 20px;
+	line-height: 2;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: underline;
+	color: blue;
+}
+
+a:hover {
+	color: green;
+}
+
+a:visited{
+	color: brown;
+}
