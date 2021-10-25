@@ -52,7 +52,8 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 min-height: 100px;
 max-height: 150px;
 border-radius: 50%;
-margin: 20px;
+margin: 70px 70px 0px 0px;
+float: right;
 }
 
 .task1
@@ -111,7 +112,7 @@ h1 {
 	text-align: center;
 }
 
-#parent{
+/* #parent{
 	position: relative;
 }
 
@@ -119,7 +120,7 @@ h1 {
 	position:absolute;
 	top:0;
 	right:0;
-}
+} */
 
 .bold {
 	font-weight: 700;
