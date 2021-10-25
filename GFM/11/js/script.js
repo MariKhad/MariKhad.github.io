@@ -1,0 +1,14 @@
+result1.innerHTML = `// ${Boolean(5 > 4)}`;
+result2.innerHTML = `// ${Boolean("ананас" > "яблоко")}`;
+result3.innerHTML = `// ${Boolean("2" > "12")}`;
+result4.innerHTML = `// ${Boolean(undefined == null)}`;
+result5.innerHTML = `// ${Boolean(undefined === null)}`;
+result6.innerHTML = `// ${Boolean(null == "\n0\n")}`;
+result7.innerHTML = `// ${Boolean(null === +"\n0\n")}`;
+result8.innerHTML = `// ${Boolean(undefined>=0)}`;
+result9.innerHTML = `// ${Boolean(null>=0)}`;
+result10.innerHTML = `// ${Boolean(undefined>=NaN)}`;
+result11.innerHTML = `// ${Boolean(undefined==0)}`;
+result12.innerHTML = `// ${Boolean("Vasya"==NaN)}`;
+result13.innerHTML = `// ${Boolean(1/0 == Infinity)}`;
+result14.innerHTML = `// ${Boolean(NaN==NaN)}`;
