@@ -1,54 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <title>Задание №7.2 от 25 октября 2021</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-  </head>
-
-  <body>
-	  <main>
-	  <h1>Базовые операторы, математика. Решение задач.</h1>
-	  <div>
-		  <h2>Постфиксная и префиксная форма</h2>
-		  <p>let a = 1, b = 1</p>
-		  <p>let c = ++a; <span id="result1"></span></p>
-		  <p>let d = b++; <span id="result2"></span></p>
-	  </div>
-	  <div>
-		<h2>Результат присваивания</h2>
-		<p>let a = 2;</p>
-		<p>let x = 1 + (a *= 2); <span id="result3"></span></p>
-	</div>
-
-	<div>
-		<h2>Преобразование типов</h2>
-		<p>"" + 1 + 0 <span id="result6"></span></p>
-		<p>"" - 1 + 0 <span id="result7"></span></p>
-		<p>true + false <span id="result8"></span></p>
-		<p>6 / "3" <span id="result9"></span></p>
-		<p>"2" * "3" <span id="result10"></span></p>
-		<p>4 + 5 + "px" <span id="result11"></span></p>
-		<p>"$" + 4 + 5 <span id="result12"></span></p>
-		<p>"4" - 2 <span id="result13"></span></p>
-		<p>"4px" - 2 <span id="result14"></span></p>
-		<p>7 / 0 <span id="result15"></span></p>
-		<p>"  -9  " + 5 <span id="result16"></span></p>
-		<p>"  -9  " - 5 <span id="result17"></span></p>
-		<p>null + 1 <span id="result18"></span></p>
-		<p>undefined + 1 <span id="result19"></span></p>
-		<p>" \t \n" - 2 <span id="result20"></span></p>
-	</div>
-
-	<div>
-		<h2>Исправляем сложение</h2>
-		<p>let a= prompt("Первое число?", a);</p>
-		<p>let b = prompt("Второе число?", b);</p>
-		<p>alert(a + b); Неправильный вариант (сложение строк): <span id="result4"></span></p>
-		<p>alert(a + b); Правильный вариант (сложение чисел): <span id="result5"></span></p>
-		<a href="#" id ="launchAdd" class="butt">Запустить</a>
-	</div>
-  </main>
-			<script src="js/script.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Задание №7.1</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="container">
+                <div class="calc">
+                    <h1 class="calc__title">
+                        Поиграемся с унарным плюсом
+                    </h1>
+                    <input id="x" placeholder="Операнд Х" type="text">
+                    <input id="y" type="text" placeholder="Операнд Y">
+						  <a href="#" id ="unar" class="butt">Унарный плюс</a>
+						  <a href="#" id ="binar" class="butt">Бинарный плюс</a>
+                    <p id="result">Вы сложили  </p>
+						 
+                </div>
+            </div>
+        </main>
+    </div>
+ <script src="js/script.js"></script>
+</body>
 </html>
+
+<!--oninput="this.value = this.value.replace(/\D/g, '')-->

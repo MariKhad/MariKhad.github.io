@@ -1,19 +1,74 @@
-*,
-*::before,
-*::after {
+* {
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+nav,
+header,
+footer,
+aside {
+  display: block;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
 }
 
-ul, ol, li {
-  list-style: none;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+ul li {
+	list-style-type: none;
+}
+
 
 img {
   vertical-align: top;
@@ -25,143 +80,66 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
   font-size: inherit;
+  font-weight: 400;
 }
 
-html, body {
-  height: 100%;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif, "Helvetica Neue";
-  font-size: 20px;
+main {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgb(191, 228, 202) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgb(191, 228, 202) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgb(191, 228, 202) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	height: auto;
+	width: 100%;
+	font-size: 18px;
+	color: darkblue;
+	line-height: 1.5;
 }
 
-.wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+div{
+	padding: 10px;
+	margin: 20px;
+		display : inline-block;
+		width : 35%;
+		height: 35%;
+		margin-bottom: 10px;
+		vertical-align: top;
+		text-align: left;
+		line-height: 1.5;
 }
 
-.
-.header {
+
+span {
+	color: darkgreen;
+}
+
+h1 {
+	font-weight: 700;
 	text-align: center;
-	padding: 30px;
-	background-color: darkslateblue;
- }
-
-
- .main {
-	flex: 1 1 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
-background: rgb(98,125,77); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 ); /* IE6-9 */
- }
- 
- .footer {
-	text-align: center;
-	padding: 30px;
-	background-color: cadetblue;
- }
-
-
-
-
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
+	font-size: 35px;
 }
 
-.calc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h2{
+	font-weight: 700;
+	font-size: 30px;
 }
-
-.calc__title {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-@media (max-width: 570px) {
-  .calc__title {
-    font-size: 24px;
-  }
-}
-
-input {
-  font-size: 20px;
-  padding: 5px;
-  margin-bottom: 20px;
-  width: 80%;
-  height: 30px;
-}
-@media (max-width: 570px) {
-  input {
-    font-size: 14px;
-  }
-}
-@media (max-width: 395px) {
-  input {
-    font-size: 11px;
-  }
-}
-
-#result {
-  font-size: 24px;
-  text-align: center;
-}
-@media (max-width: 570px) {
-  #result {
-    font-size: 18px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map 
-button{
-	font-family: Arial, Helvetica, sans-serif, "Helvetica Neue";
-	font-size: 20px;
-	 Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232 *
-background: rgb(225,255,255);  Old browsers 
-background: -moz-linear-gradient(top,  rgba(225,255,255,1) 0%, rgba(225,255,255,1) 7%, rgba(225,255,255,1) 12%, rgba(253,255,255,1) 12%, rgba(230,248,253,1) 30%, rgba(200,238,251,1) 54%, rgba(190,228,248,1) 75%, rgba(177,216,245,1) 100%); 
-background: -webkit-linear-gradient(top,  rgba(225,255,255,1) 0%,rgba(225,255,255,1) 7%,rgba(225,255,255,1) 12%,rgba(253,255,255,1) 12%,rgba(230,248,253,1) 30%,rgba(200,238,251,1) 54%,rgba(190,228,248,1) 75%,rgba(177,216,245,1) 100%); 
-background: linear-gradient(to bottom,  rgba(225,255,255,1) 0%,rgba(225,255,255,1) 7%,rgba(225,255,255,1) 12%,rgba(253,255,255,1) 12%,rgba(230,248,253,1) 30%,rgba(200,238,251,1) 54%,rgba(190,228,248,1) 75%,rgba(177,216,245,1) 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=0 ); 
-  margin-bottom: 20px;
-  padding: 5px;
-  border-radius: 5%;
-}
-
-*/
 
 a.butt {
 	text-align:center;
-	font-size:inherit;
+	font-size: 15px;
 	text-decoration: none;
 	font-weight: 700;
 	padding: 5px 10px;
 	background: #eaeef1;
-	display:block;
 	width: auto;
-	margin: 20px auto;
+	display: inline-block;
+	margin-left: 0px;
+	margin-top: 15px;
 	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.1));
 	border-radius: 3px;
 	color: rgba(0,0,0,.6);
 	text-shadow: 0 1px 1px rgba(255,255,255,.7);
 	box-shadow: 0 0 0 1px rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.2), inset 0 1px 2px rgba(255,255,255,.7);
-}
-
-a.butt:hover, a.butt.hover {
-	background: #fff;
-}
-a.butt:active, a.butt.active {
-	background: #d0d3d6;
-	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));
-	box-shadow: inset 0 0 2px rgba(0,0,0,.2), inset 0 2px 5px rgba(0,0,0,.2), 0 1px rgba(255,255,255,.2);
 }
