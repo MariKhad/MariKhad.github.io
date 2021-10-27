@@ -29,6 +29,7 @@ h6 {
   font-size: inherit;
 }
 
+<<<<<<< HEAD
 html, body {
   height: 100%;
   color: #fff;
@@ -40,6 +41,24 @@ html, body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+=======
+main {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgb(191, 228, 202) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgb(191, 228, 202) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgb(191, 228, 202) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	color: darkblue;
+	line-height: 1.5;
+}
+
+div{
+	margin: 20px;
+>>>>>>> main
 }
 
 .
@@ -85,6 +104,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac695', end
   align-items: center;
 }
 
+<<<<<<< HEAD
 .calc__title {
   text-align: center;
   font-size: 30px;
@@ -165,4 +185,9 @@ a.butt:active, a.butt.active {
 	background: #d0d3d6;
 	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0));
 	box-shadow: inset 0 0 2px rgba(0,0,0,.2), inset 0 2px 5px rgba(0,0,0,.2), 0 1px rgba(255,255,255,.2);
+=======
+h2{
+	font-weight: 700;
+	font-size: 30px;
+>>>>>>> main
 }
