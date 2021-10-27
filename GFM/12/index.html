@@ -57,7 +57,7 @@
 	<div class="div1">
 		<h2>Перепешите 'if..else' в '?'</h2>
 		<div class="switch-btn" id="switch-btn-2"></div>
-		<div id="block-3" class="div2">
+		<div id="block-3">
 			<h3> Начальный вариант</h3>
 		<code>let message;<br />
 			if (login == 'Сотрудник') { <br />
@@ -70,11 +70,12 @@
 			  message = '';<br />
 			}</code>
 		</div>
-		<div id="block-4" class="bl-hide1 div2">
+		<div id="block-4" class="bl-hide1">
 		  <h3>Решение</h3>
-		  <code>let result = (login == 'Сотрудник') ? message = 'Привет': 
-			(login == 'Сотрудник') ?  message = 'Здравствуйте':(login == '')?
-			message = 'Нет логина': message = '';
+		  <code>let message = (login == 'Сотрудник') ? 'Привет': <br />
+			(login == 'Директор') ? 'Здравствуйте':<br />
+			(login == '') ? 'Нет логина':<br />
+			'';
 		  </code>
 		</div>
 	</div>
