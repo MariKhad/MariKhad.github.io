@@ -38,14 +38,16 @@ function isNumber(n) {
 		result.innerHTML = `Решение: ${x-y}`
 	} else if (operator == "*") {
 		result.innerHTML = `Решение: ${x*y}` 
-	} else if (operator == "/") {
+	} else if (operator == "/" && y == 0) {
+		result.innerHTML = `<span class="alert">На ноль делить НЕЛЬЗЯ!!</span>` 
+	} else if (operator == "/"){
 		result.innerHTML = `Решение: ${x/y}` 
-	} else if (operator == "%") {
+	}else if (operator == "%") {
 		result.innerHTML = `Решение: ${x%y}` 
 	} else if (operator == "**") {
 		result.innerHTML = `Решение: ${x**y}` 
 	} else {
-	result.innerHTML = `<span class="alert">Введенное значение не является рабочим оператором.`;// Для помощи нажмите F1</span>
+	result.innerHTML = `<span class="alert">Введенное значение не является рабочим оператором.</span>`;// Для помощи нажмите F1</span>
 	}
  }
 
