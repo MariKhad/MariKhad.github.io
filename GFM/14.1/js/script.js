@@ -1,11 +1,9 @@
 addEventListener("DOMContentLoaded", onReady); 
 
-let x = document.getElementById('opX').value;
-let y = document.getElementById('opY').value;
-let result = document.getElementById('result');
-
 function onReady() {
 	document.getElementById('butt').onclick = Calc;
+	
+	
 	// обработчик нажатия клавиши
  	document.addEventListener('keydown', function(e) {
 		if (e.code === 'Enter') {
@@ -31,6 +29,9 @@ function isNumber(n) {
  }
 
  function findOperator() {
+	let x = document.getElementById('opX').value;
+	let y = document.getElementById('opY').value;
+	let result = document.getElementById('result');
 	let operator = document.getElementById('op').value;
 	if (operator == "+") {
 		result.innerHTML = `Решение: ${+x + +y}`
@@ -38,15 +39,18 @@ function isNumber(n) {
 		result.innerHTML = `Решение: ${x-y}`
 	} else if (operator == "*") {
 		result.innerHTML = `Решение: ${x*y}` 
-	} else if (operator == "/" && y == 0) {
-		result.innerHTML = `<span class="alert">На ноль делить НЕЛЬЗЯ!!</span>` 
-	} else if (operator == "/"){
+	}
+	else if (operator == "/" && y == 0) {
+			result.innerHTML = `<span class="alert">На ноль делить НЕЛЬЗЯ!!</span>` 
+		}
+	   else if (operator == "/"){
 		result.innerHTML = `Решение: ${x/y}` 
 	}else if (operator == "%") {
 		result.innerHTML = `Решение: ${x%y}` 
 	} else if (operator == "**") {
 		result.innerHTML = `Решение: ${x**y}` 
-	} else {
+	} 
+	else {
 	result.innerHTML = `<span class="alert">Введенное значение не является рабочим оператором. Для помощи нажмите левый Ctrl </span>`;
 	}
  }
@@ -54,6 +58,7 @@ function isNumber(n) {
 function Calc() {
 	let x = document.getElementById('opX').value;
 	let y = document.getElementById('opY').value;
+	let result = document.getElementById('result');
 	if (isNumber(x) && isNumber(y)) {
 	findOperator();
 	}
