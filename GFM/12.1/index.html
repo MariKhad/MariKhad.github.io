@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Задание №12.1 от 29 октября 2021</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+
+  <body>
+	  <main>
+	  <h1>Логические операторы</h1>
+	  <h2>Решение задач из учебника</h2>
+	  <div class="flex">
+	  <ol>
+	  	  <li>Что выведет:<br /><code>alert( null || 2 || undefined );</code><br /><a id="buttOR" class="butt">Проверить</a></li>
+		  <li>Что выведет:<br /><code>alert( alert(1) || 2 || alert(3) );</code><br /><a id="buttOR2" class="butt">Проверить</a></li>
+		  <li>Что выведет:<br /><code>alert( 1 && null && 2 );</code><br /><a id="buttAND" class="butt">Проверить</a></li>
+		  <li>Что выведет:<br /><code>alert( alert(1) && alert(2) );</code><br /><a id="buttAND2" class="butt">Проверить</a></li>
+		  <li>Что выведет:<br /><code>alert( null || 2 && 3 || 4 );</code><br /><a id="buttOrAnd" class="butt">Проверить</a></li>
+		  <li>Проверка значения из диапазона <br />
+			<input id='age' placeholder="Введите возраст" type="number">
+		  <a id='ageButt' class="butt">Выполнить</a></li>
+		  <li>Проверка значения вне диапазона <br />
+			  <input id='age2' placeholder="Введите возраст" type="number">
+			<a id='ageButt2' class="butt">Выполнить</a></li>
+		<li>Проверка логина. Для подсказки нажмите левый Ctrl. <br />
+			<a id='passButt' class="butt">Старт</a></li>
+			<li>Какие из перечисленных ниже alert выполнятся?<br />
+				<code>if (-1 || 0) alert( 'first' );</code><span id="IF1"></span><br />
+				<code>if (-1 && 0) alert( 'second' );</code><span id="IF2"></span><br />
+				<code>if (null || -1 && 1) alert( 'third' );</code><span id="IF3"></span><br/>
+				<a id="IF" class="butt">Проверить</a></li>
+		</ol>
+	</div>
+  </main>
+			<script src="js/script.js"></script>
+    </div>
+  </body>
+</html>
