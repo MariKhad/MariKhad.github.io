@@ -17,7 +17,7 @@ const tasks = [
 	{
 		id: 2,
 		name: 'make a test',
-		status: DONE,
+		status: TO_DO,
 		priority: LOW,
 	},
 
@@ -30,7 +30,7 @@ const tasks = [
 
 	{
 		id: 4,
-		name: 'write a post',
+		name: 'write an email',
 		status: IN_PROGRESS,
 		priority: HIGH,
 	},
@@ -46,9 +46,9 @@ const tasks = [
 
 function showBy(method) {
 	if (method === 'status') {
-		let progressTasks = '-';
-		let todoTasks = '-';
-		let doneTasks = '-';
+		let progressTasks = '';
+		let todoTasks = '';
+		let doneTasks = '';
 		for (let item of tasks) {
 			if (item.status === IN_PROGRESS) {
 				progressTasks = progressTasks + item.name + "\n";
@@ -60,15 +60,25 @@ function showBy(method) {
 				doneTasks = doneTasks + item.name + "\n";
 			}
 		}
+		if (progressTasks === '') {
+			progressTasks = '-';
+		}
 
+		if (todoTasks === '') {
+			todoTasks = '-';
+		}
+
+		if (doneTasks === '') {
+			doneTasks = '-';
+		}
 		console.log('in progress: \n' + progressTasks);
 		console.log('to do: \n' + todoTasks);
 		console.log('done: \n' + doneTasks);
 	}
 
 	if (method === 'priority') {
-		let highPriorityTasks = '-';
-		let lowPriorityTasks = '-';
+		let highPriorityTasks = '';
+		let lowPriorityTasks = '';
 		for (let item of tasks) {
 			if (item.priority === HIGH) {
 				highPriorityTasks = highPriorityTasks + item.name + "\n";
@@ -76,6 +86,15 @@ function showBy(method) {
 			else {
 				lowPriorityTasks = lowPriorityTasks + item.name + "\n";
 			}
+
+			if (highPriorityTask === '') {
+				highPriorityTask = '-';
+			}
+
+			if (lowPriorityTask === '') {
+				lowPriorityTask = '-';
+			}
+
 			console.log('High priority: \n' + highPriorityTasks);
 			console.log('Low priority: \n' + lowPriorityTasks);
 		}
@@ -119,11 +138,9 @@ function addTask(name, status, priority) {
 
 function deleteTask(id) {
 	for (let i = 0; i < tasks.length; i++) {
-		if ((i + 1) === id) {
+		if (tasks[i].id === id) {
 			delete tasks.splice(i, 1);
 		}
-		console.log(tasks[i]);
-		break;
 	}
 }
 
@@ -140,16 +157,16 @@ function changePriority(id, priority) {
 	for (let item of tasks)
 		if (item.id === id) {
 			item.priority = priority;
+			break;
 		}
-	break;
+
 }
 
 changeStatus(4, DONE);
-deleteTask(3);
+deleteTask(1);
 changePriority(5, LOW);
 addTask('write a book', IN_PROGRESS, HIGH);
 addTask('housework', IN_PROGRESS, LOW);
-//console.log(tasks[2]);
 showBy('status');
 
 
