@@ -65,6 +65,15 @@ a:hover {
   font-family: inherit;
 }
 
+ul li {
+	list-style-type: none;
+}
+
+
+img {
+  vertical-align: top;
+}
+
 h1,
 h2,
 h3,
@@ -76,48 +85,38 @@ h6 {
 }
 
 main {
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgb(205, 241, 194) 0%, rgb(88, 185, 97) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(205, 241, 194) 0%,rgb(88, 185, 97) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(205, 241, 194) 0%,rgb(88, 185, 97) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-	min-height: 100%;
-	max-height: auto;
-	min-width: 100%;
-	max-width: auto;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100;Blue+3D+%2318 */
+background: rgb(254,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgb(228, 199, 173) 35%, rgb(228, 158, 126) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(228, 199, 173) 35%,rgba(228, 158, 126) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(228, 199, 173) 35%,rgba(228, 158, 126) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
 	font-size: 20px;
 	color: darkblue;
 	line-height: 1.5;
 }
 
-ol li{
-	display: inline-block;
-	padding: 5px;
-	margin: 5px 5px 5px 20px;
-	width: 500px;
-	height: auto;
-}
 
 
 span {
 	color: darkgreen;
 }
 
-h1, h2 {
+h1 {
 	font-weight: 700;
 	text-align: center;
 	font-size: 35px;
 }
 
 h2{
-	font-size: 30px;
+	font-weight: 700;
+	font-size: 25px;
 }
 
 a.butt {
 
 	text-align:center;
-	font-size: 16px;
+	font-size: 17px;
 	text-decoration: none;
 	font-weight: 700;
 	padding: 5px 10px;
@@ -125,7 +124,7 @@ a.butt {
 	display:inline-block;
 	width: auto;
 	height: auto;
-	margin: 5px;
+	margin: 10px;
 	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.1));
 	border-radius: 3px;
 	color: rgba(0,0,0,.6);
@@ -142,25 +141,14 @@ a.butt:active, a.butt.active {
 	box-shadow: inset 0 0 2px rgba(0,0,0,.2), inset 0 2px 5px rgba(0,0,0,.2), 0 1px rgba(255,255,255,.2);
 }
 
-code{
-	display: inline-block;
-	width: auto;
-	background-color: rgb(191, 201, 138);
-	margin:10px
+code {
+	display:inline-block;
+	padding: 10px;
+	margin: 5px;
+	background-color: rgb(211, 191, 168);
 }
 
-div .flex {
-	max-width: 100%;
-	min-width: 100%;
-	display: flex;
-	flex-flow: row wrap;
-}
-
-input {
-	font-size: 20px;
-	padding: 5px;
-	margin:5px;
-	width: 80%;
-	height: 30px;
-	border-radius: 5px;
- }
+.container{
+	margin: 10px;
+	padding: 10px;
+} 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Задание №14 от 2 октября 2021</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+
+  <body>
+	  <main>
+	  <h1>Функции. Решение задач</h1>
+	<div>
+	<div class="div1">
+		<h2>Перепешите 'if' в '?'</h2>
+			<div class="switch-btn" id="switch-btn-1"></div>
+	  
+			<div id="block-1" class="div2"> 
+				<h3> Начальный вариант</h3>
+			<code>let result;<br />
+
+				if (a + b < 4) {<br />
+				  result = 'Мало';<br />
+				} else {<br />
+				  result = 'Много';
+				}</code>
+			</div>
+			<div id="block-2" class="bl-hide div2">
+			  <h3>Решение</h3>
+			  <code>let result = (a + b < 4) ? 'Мало': 'Много'</code>
+	  
+		 </div>
+		 </div>
+		</div> 
+
+	<div class="div1">
+		<h2>Перепешите 'if..else' в '?'</h2>
+		<div class="switch-btn" id="switch-btn-2"></div>
+		<div id="block-3" class="div2">
+			<h3> Начальный вариант</h3>
+		<code>let message;<br />
+			if (login == 'Сотрудник') { <br />
+			  message = 'Привет';<br />
+			} else if (login == 'Директор') {<br />
+			  message = 'Здравствуйте';<br />
+			} else if (login == '') {<br />
+			  message = 'Нет логина';<br />
+			} else {<br />
+			  message = '';<br />
+			}</code>
+		</div>
+		<div id="block-4" class="bl-hide1 div2">
+		  <h3>Решение</h3>
+		  <code>let message = (login == 'Сотрудник') ? 'Привет': <br />
+			(login == 'Директор') ? 'Здравствуйте':<br />
+			(login == '') ? 'Нет логина':<br />
+			'';
+		  </code>
+		</div>
+		<div>
+			<h2>if (строка с нулем)</h2>
+			<code>if ("0") {<br />
+			 alert( 'Привет' ); <br />}</code>
+			<p><span id="result1"> // Выведется ли alert?</span></p>
+			<a href="#" id ="check0" class="butt">Проверить</a>
+		  
+		</div>
+		<div>
+		 <h2>Название JavaScript</h2>
+		 <p>Какое "официальное" название JavaScript?</p>
+		 <input id="nameInput" placeholder="Введите официальное имя" type="text">
+		 <p><span id="result2"></span></p>
+		 <a href="#" id ="nameButt" class="butt">Проверить</a>
+	 </div>
+	</div>
+  </main>
+			<script src="js/script.js"></script>
+  </body>
+</html>
+
+<!-- Что-то не так -->
