@@ -87,12 +87,12 @@ function showBy(method) {
 				lowPriorityTasks = lowPriorityTasks + item.name + "\n";
 			}
 
-			if (highPriorityTask === '') {
-				highPriorityTask = '-';
+			if (highPriorityTasks === '') {
+				highPriorityTasks = '-';
 			}
 
-			if (lowPriorityTask === '') {
-				lowPriorityTask = '-';
+			if (lowPriorityTasks === '') {
+				lowPriorityTasks = '-';
 			}
 
 			console.log('High priority: \n' + highPriorityTasks);
