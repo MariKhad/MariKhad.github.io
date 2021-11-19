@@ -3,106 +3,153 @@ const IN_PROGRESS = 'In Progress';
 const DONE = 'Done';
 const HIGH = 'high';
 const LOW = 'low';
+let lastId = 5;
+
 
 
 const tasks = [
 	{
 		id: 1,
-		nam: 'create a post',
-		stat: TO_DO,
+		name: 'create a post',
+		status: TO_DO,
 		priority: LOW,
 	},
 	{
 		id: 2,
-		nam: 'make a test',
-		stat: DONE,
+		name: 'make a test',
+		status: DONE,
 		priority: LOW,
 	},
 
 	{
 		id: 3,
-		nam: 'make a bed',
-		stat: IN_PROGRESS,
+		name: 'make a bed',
+		status: IN_PROGRESS,
 		priority: LOW,
 	},
 
 	{
 		id: 4,
-		nam: 'write a post',
-		stat: DONE,
+		name: 'write a post',
+		status: IN_PROGRESS,
 		priority: HIGH,
 	},
 
 	{
 		id: 5,
-		nam: 'write a letter',
-		stat: TO_DO,
+		name: 'write a letter',
+		status: TO_DO,
 		priority: HIGH,
 	},
 ]
 
 
-function showList() {
-	let progressTasks = '-';
-	let todoTasks = '-';
-	let doneTasks = '-';
-	for (let item of tasks) {
-		if (item.stat === IN_PROGRESS) {
-			progressTasks = progressTasks + item.nam + "\n";
+function showBy(method) {
+	if (method === 'status') {
+		let progressTasks = '-';
+		let todoTasks = '-';
+		let doneTasks = '-';
+		for (let item of tasks) {
+			if (item.status === IN_PROGRESS) {
+				progressTasks = progressTasks + item.name + "\n";
+			}
+			else if (item.status === TO_DO) {
+				todoTasks = todoTasks + item.name + "\n";
+			}
+			else {
+				doneTasks = doneTasks + item.name + "\n";
+			}
 		}
-		else if (item.stat === TO_DO) {
-			todoTasks = todoTasks + item.nam + "\n";
-		}
-		else {
-			doneTasks = doneTasks + item.nam + "\n";
-		}
+
+		console.log('in progress: \n' + progressTasks);
+		console.log('to do: \n' + todoTasks);
+		console.log('done: \n' + doneTasks);
 	}
 
-	console.log('in progress: \n' + progressTasks);
-	console.log('to do: \n' + todoTasks);
-	console.log('done: \n' + doneTasks);
+	if (method === 'priority') {
+		let highPriorityTasks = '-';
+		let lowPriorityTasks = '-';
+		for (let item of tasks) {
+			if (item.priority === HIGH) {
+				highPriorityTasks = highPriorityTasks + item.name + "\n";
+			}
+			else {
+				lowPriorityTasks = lowPriorityTasks + item.name + "\n";
+			}
+			console.log('High priority: \n' + highPriorityTasks);
+			console.log('Low priority: \n' + lowPriorityTasks);
+		}
+	}
 }
 
-const isStatusValid = (stat === TO_DO || stat === IN_PROGRESS || stat === DONE);
-const isPriorityValid = (prior === HIGH || prior === LOW);
+function isStatusValid(status) {
+	if (status === TO_DO || status === IN_PROGRESS || status === DONE)
+		return true;
+}
+
+function isPriorityValid(priority) {
+	if (priority === HIGH || priority === LOW) {
+		return true;
+	}
+}
 
 
-function addTask(task, status, prior) {
-	if (!isStatusValid) {
-		stat = TO_DO;
+function addTask(name, status, priority) {
+	if (!isStatusValid(status)) {
+		status = TO_DO;
 	}
-	if (!isPriorityValid) {
-		prior = LOW;
+	if (!isPriorityValid(priority)) {
+		priority = LOW;
 	}
+	lastId++;
 	tasks.push(
 		{
-			id: tasks.length + 1,
-			nam: task,
-			stat: status,
-			pritority: prior,
+			id: lastId,
+			name,
+			status,
+			priority,
 		})
 
 }
 
-/*
-function deleteTask(delKey) {
-	if (!isInList(delKey)) {
-		console.log(delKey + ' такой задачи нет в списке');
-	} else delete list[delKey];
-}
 
 
-function changeStatus(chKey, chstat) {
-	if (isInList(chKey)) {
-		list[chKey] = chstat;
-		return;
+
+
+
+function deleteTask(id) {
+	for (let i = 0; i < tasks.length; i++) {
+		if ((i + 1) === id) {
+			delete tasks.splice(i, 1);
+		}
+		console.log(tasks[i]);
+		break;
 	}
-	else return console.log(chKey + ' такой задачи нет в списке');
 }
 
-changeStatus('write a post', 'done');
-deleteTask('write a letter'); * /
-addTask('write a number');
-showList();
+
+function changeStatus(id, status) {
+	for (let item of tasks)
+		if (item.id === id) {
+			item.status = status;
+			break;
+		}
+}
+
+function changePriority(id, priority) {
+	for (let item of tasks)
+		if (item.id === id) {
+			item.priority = priority;
+		}
+	break;
+}
+
+changeStatus(4, DONE);
+deleteTask(3);
+changePriority(5, LOW);
+addTask('write a book', IN_PROGRESS, HIGH);
+addTask('housework', IN_PROGRESS, LOW);
+//console.log(tasks[2]);
+showBy('status');
 
 
