@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
-
-@MariKhad
-MariKhad
-	/
-	MariKhad.github.io
-Public
-1
-01
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-MariKhad.github.io / GFM / 29.2 / main.js /
-@MariKhad
-MariKhad Корявый todo готов 2
-Latest commit 483e4e9 2 hours ago
-History
-1 contributor
-173 lines(141 sloc)  2.78 KB
-
 const TO_DO = 'To Do';
 const IN_PROGRESS = 'In Progress';
 const DONE = 'Done';
@@ -199,6 +168,6 @@ changePriority(5, LOW);
 addTask('write a book', IN_PROGRESS, HIGH);
 addTask('housework', IN_PROGRESS, LOW);
 showBy('status');
-showBy('priority');
+
 
 
