@@ -168,5 +168,6 @@ changePriority(5, LOW);
 addTask('write a book', IN_PROGRESS, HIGH);
 addTask('housework', IN_PROGRESS, LOW);
 showBy('status');
+showBy('priority');
 
 
