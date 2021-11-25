@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+nav,
+header,
+footer,
+aside {
+  display: block;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: #E5E5E5;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  font-size: 32px;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+main {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+max-width: 1100;
+margin: 100px auto 40px auto;
+}
+
+
+
+
+.calc {
+	background-color: #17171c;
+	width: 364px;
+	height: 582px;
+	margin: 0 auto;
+	padding: 16px 20px 25px 20px;
+}
+
+.calc__row1 {
+	display: flex;
+	width: 324px;
+	height: 72px;
+	flex-direction: row;
+	align-items: flex-start;
+	padding:0;
+	order: 2;
+	margin: 16px 0px;
+	gap: 16px;
+}
+
+.calc__row2 {
+	display: flex;
+	width: 324px;
+	height: 72px;
+	flex-direction: row;
+	align-items: flex-start;
+	padding:0;
+	order: 3;
+	margin: 16px 0px;
+	gap: 16px;
+}
+
+.calc__row3 {
+	display: flex;
+	width: 324px;
+	height: 72px;
+	flex-direction: row;
+	align-items: flex-start;
+	padding:0;
+	order: 4;
+	margin: 16px 0px;
+	gap: 16px;
+}
+
+.calc__row4 {
+	display: flex;
+	width: 324px;
+	height: 72px;
+	flex-direction: row;
+	align-items: flex-start;
+	padding:0;
+	order: 5;
+	margin: 16px 0px;
+	gap: 16px;
+}
+
+.calc__row5 {
+	display: flex;
+	width: 324px;
+	height: 72px;
+	flex-direction: row;
+	align-items: flex-start;
+	padding:0;
+	order: 6;
+	margin: 16px 0px;
+	gap: 16px;
+}
+
+
+.calc__input{
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-size: 96px;
+	line-height: 96px;
+	background-color: #17171c;
+	text-align: right;
+	color: #fff;
+	width: 324px;
+	height: 96px;
+	display: flex;
+	align-items: center;
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 16px 0px;
+}
+
+.row5__butt0{
+	width: 238.33px;
+	height: 72px;
+	background: #2E2F38;
+	border-radius: 24px;
+	font-family: "Work Sans", sans-serif;
+	font-size: 32px;
+	text-align: center;
+	font-family: inherit;
+	color: inherit;
+	font-size: inherit;
+}
+
+.row__butt {
+	width: 69.67px;
+	height: 72px;
+	border-radius: 24px;
+	font-family: inherit;
+	color: inherit;
+	font-size: inherit;
+	background: #2E2F38;
+}
+
+.row__butt:last-child{
+	background: #4B5EFC;
+}
+
+.row__buttC {
+	width: 111.17px;
+	height: 72px;
+	border-radius: 24px;
+	flex: none;
+	flex-grow: 0;
+	font-family: inherit;
+	color: inherit;
+	font-size: inherit;
+	background: #2E2F38;
+}
+
+button:hover {
+	background-color: #4e505f;
+}
+
+.row__butt:last-child:hover {
+	background-color: #7985f8;
+}
