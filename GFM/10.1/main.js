@@ -1,27 +1,28 @@
-function Calc(x, y, op) {
+function Calc(op, x, y,) {
 	let result;
-	const isOperatorValid = (op === "+") || (op === "-") || (op === "/") || (op === "*") || (op === "**") || (op === "%");
-	const isOperandValid = (x !== undefined) || (y !== undefined);
+	// "+" = sum, "-" = sub, "*" = multi, "/" = div, "**" = exp, "%" = rem
+	//const isOperatorValid = (op === "sum") || (op === "sub") || (op === "div") || (op === "multi") || (op === "**") || (op === "rem"); Не пригодилось
 	const isNumber = (typeof x === "number") && (typeof y === "number");
-	if (!isOperatorValid || op === undefined) {
-		console.log('unknown operation');
-	} else if (!isOperandValid || !isNumber) {
-		console.log('Error');
-	} else if (op === "+") {
+	const isOperandValid = (x !== undefined) || (y !== undefined);
+	if (!isOperandValid || !isNumber) {
+		result = 'Error';
+	} else if (op === "sum") {
 		result = x + y;
-	} else if (op === "-") {
+	} else if (op === "sub") {
 		result = x - y;
-	} else if (op === "*") {
+	} else if (op === "multi") {
 		result = x * y;
-	} else if (op === "/") {
+	} else if (op === "div") {
 		result = x / y;
-	} else if (op === "**") {
+	} else if (op === "exp") {
 		result = x ** y;
-	} else if (op === "%") {
+	} else if (op === "rem") {
 		result = x % y;
+	} else {
+		result = 'unknown operation';
 	}
 	return result;
 }
 
-console.log(Calc(12, 3, "/"));
+console.log(Calc("multi", 333, 17));
 
