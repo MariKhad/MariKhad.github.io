@@ -3,22 +3,25 @@ function Calc(x, y, op) {
 	const isOperatorValid = (op === "+") || (op === "-") || (op === "/") || (op === "*") || (op === "**") || (op === "%");
 	const isOperandValid = (x !== undefined) || (y !== undefined);
 	const isNumber = (typeof x === "number") && (typeof y === "number");
-	if (!isOperatorValid) {
+	if (!isOperatorValid || op === undefined) {
 		console.log('unknown operation');
 	} else if (!isOperandValid || !isNumber) {
 		console.log('Error');
 	} else if (op === "+") {
-		return console.log(result = x + y);
+		result = x + y;
 	} else if (op === "-") {
-		return console.log(result = x - y);
+		result = x - y;
 	} else if (op === "*") {
-		return console.log(result = x * y);
+		result = x * y;
 	} else if (op === "/") {
-		return console.log(result = x / y);
+		result = x / y;
 	} else if (op === "**") {
-		return console.log(result = x ** y);
+		result = x ** y;
 	} else if (op === "%") {
-		return console.log(result = x % y);
+		result = x % y;
 	}
+	return result;
 }
-Calc(12, a, "/");
+
+console.log(Calc(12, 3, "/"));
+
