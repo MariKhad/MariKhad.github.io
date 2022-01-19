@@ -5,7 +5,7 @@ function Calc(x, y, op) {
 	const isNumber = (typeof x === "number") && (typeof y === "number");
 	if (!isOperatorValid) {
 		console.log('unknown operation');
-	} else if (!isOperatorValid || !isNumber) {
+	} else if (!isOperandValid || !isNumber) {
 		console.log('Error');
 	} else if (op === "+") {
 		return console.log(result = x + y);
@@ -21,4 +21,4 @@ function Calc(x, y, op) {
 		return console.log(result = x % y);
 	}
 }
-Calc(12, 4, "*");
+Calc(12, a, "/");
