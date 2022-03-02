@@ -11,6 +11,6 @@ firstName = inputValue.textContent;
 buttonSubmit.addEventListener('click', function (){
 	alert("идет отправка запроса");
 	fetch(url)
-    .then(response => response.text());
-taskResult.textContent = `${firstName} is ${serverAnswer}`;
+    .then(response => alert(response.text()));
+//taskResult.textContent = `${firstName} is ${serverAnswer}`;
 })
