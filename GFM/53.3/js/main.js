@@ -13,7 +13,6 @@ function submitForm(e) {
 	fetch(url1)
 		.then(response => response.json())
 		.then(result1 => {
-			// обрабатывать result здесь.
 			let gender = result1.gender;
 			fetch(url2)
 				.then(response => response.json())
