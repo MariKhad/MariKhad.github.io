@@ -10,28 +10,28 @@ class Storage {
 
 	get(key) {
 		try {
-			return JSON.parse(this.storage.getItem(this.key));
+			JSON.parse(this.storage.getItem(this.key));
 		}
 		catch (err) {
-			alert(err);
+			console.log(err);
 		}
 	}
 
 	set(key, value) {
 		try {
-			storage.setItem(JSON.stringify(this.key), JSON.stringify(this.value));
+			this.storage.setItem(JSON.stringify(this.key), JSON.stringify(this.value));
 		}
 		catch (err) {
-			alert(err);
+			console.log(err);
 		}
 	}
 
 
 	clear(key) {
-		storage.removeItem(this.key, '');
+		this.storage.removeItem(this.key);
 	}
 	isEmpty(key) {
-		return !storage.get(this.key)
+		return !this.storage.get(this.key)
 	}
 }
 
@@ -41,9 +41,9 @@ let store123 = new Storage('local');
 
 
 storage1.set('city', 'Kazan');
-console.log(storage.get('city'));
+console.log(storage1.get('city'));
 let value = {
-	зп: '400',
+	salary: '400',
 	status: 'married',
 }
 store123.set('Gleb', value);
